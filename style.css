@@ -40,7 +40,7 @@ main {
 }
 
 .personal-title {
-    margin: 50px auto;
+    margin: 70px auto;
     text-align: center;
     font-size: 30px;
 }
@@ -49,10 +49,39 @@ main {
 .language-bar {
     width: 80%;
     margin: 30px auto;
-    height: 30px;
-    background-color: aqua;
+    height: 40px;
+    background-color:white;
     border-radius: 20px;
 }
+
+.english::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 40px;
+    background-color:aqua;
+    border-radius: 20px;
+}
+
+.german::before {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 40px;
+    background-color:aqua;
+    border-radius: 20px;
+}
+
+.spanish::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 40px;
+    background-color:aqua;
+    border-radius: 20px;
+}
+
+
 .language-text {
     width: 15%;
     color: white;
@@ -200,8 +229,8 @@ main {
  }
 
  .skills-block .sheme-block-title {
-     margin-top: 200px;
-     margin-bottom: 100px;
+    margin-top: 195px;
+    margin-bottom: 55px;
  }
 
 
@@ -210,8 +239,8 @@ main {
     transform-origin: center;
     position: relative;
     transform: rotate(-45deg);
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 200px;
     border: 100px solid #95CD8B;
     border-right: 100px solid #D0E6BB;
     border-bottom: 100px solid  rgb(216, 176, 66);
@@ -221,10 +250,10 @@ main {
 
 .skills::after {
     content: "";
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 200px;
     transform: rotate(60deg) translate(-100px, -100px);
-    transform-origin: 150px 150px;
+    transform-origin: 100px 100px;
     position: absolute;
     display: block;
     border-radius: 100%;
@@ -235,10 +264,10 @@ main {
 
 .skills::before {
     content: "";
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 200px;
     transform: rotate(156deg) translate(-100px, -100px);
-    transform-origin: 150px 150px;
+    transform-origin: 100px 100px;
     position: absolute;
     display: block;
     border-radius: 100%;
@@ -249,28 +278,31 @@ main {
 .skills_text-one {
     position: absolute;
     top: 100px;
-    left: 50px;
-    font-size: 30px;
+    left: 38px;
+    font-size: 20px;
     color: #0b1829;
     font-weight: bold;
+    border-bottom: 5px solid #95cd8b;
 }
 
 .skills_text-two {
     position: absolute;
-    top: 140px;
-    left: 600px;
-    font-size: 30px;
+    top: 210px;
+    left: 535px;
+    font-size: 20px;
     color: #0b1829;
     font-weight: bold;
+    border-bottom: 5px solid #d0e6bb; 
 }
 
 .skills_text-three {
     position: absolute;
-    top: 600px;
-    left: 50px;
-    font-size: 30px;
+    top: 485px;
+    left: 118px;
+    font-size: 20px;
     color: #0b1829;
-    font-weight: bold;  
+    font-weight: bold; 
+    border-top: 5px solid #d8b042;  
 }
 
 
@@ -293,20 +325,117 @@ main {
 .experiense-content-second {
     display: flex;
     justify-content: space-around;
-  
+    margin-left: 95px;
+    text-align: center;
 }
 
-.experiense-content-first div{
-    width: 30%;
+.experiense-inform {
+   
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.experiense-title {
+    text-align: center;
+    width: 100%;
+}
+
+.experiense-content-first .experiense-inform:nth-child(1) {
+    position: relative;
+    border-bottom: 5px solid #0b1829;
+    padding: 3px;
+}
+
+.experiense-content-first .experiense-inform:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #0b1829;
+    left: 115px;
+    top: 167px;
+ 
+}
+
+
+.experiense-content-first .experiense-inform:nth-child(2) {
+    border-bottom: 5px solid #7fadaa;
+    position: relative;
+    padding: 3px;
+}
+
+.experiense-content-first .experiense-inform:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #7fadaa;
+    left: 100px;
+    top: 168px;
+}
+
+.experiense-content-first .experiense-inform:nth-child(3) {
+    border-bottom: 5px solid #f9daac;
+    position: relative;
+    padding: 3px;
+}
+
+.experiense-content-first .experiense-inform:nth-child(3)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #f9daac;
+    left: 88px;
+    top: 168px;
+}
+
+.experiense-content-second .experiense-inform:nth-child(1) {
+    border-top: 5px solid #588f96;
+    position: relative;
+    padding: 3px;
+}
+.experiense-content-second .experiense-inform:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #588f96;
+    left: 100px;
+    top: -70px;
+}
+
+
+.experiense-content-second .experiense-inform:nth-child(2) {
+    border-top: 5px solid #ccd9cf;
+    position: relative;
+    padding: 3px;
+}
+
+
+.experiense-content-second .experiense-inform:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: #ccd9cf;
+    left: 32px;
+    top: -70px;
+}
+
+
+.experiense-content-second > div {
+    width: 35%;
     font-size: 14px;
     margin: 15px;
 }
 
-.experiense-content-second div{
-    width: 25%;
-    font-size: 14px;
-    margin: 15px;
-}
 
 .arrow-block {
     width: 80%;
@@ -315,7 +444,6 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 30px auto;
-
 }
 
 .arrow {
